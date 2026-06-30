@@ -1,9 +1,7 @@
 import streamlit as st
     import pandas as pd
     import plotly.express as px
-
     st.set_page_config(page_title="Sales & Revenue Dashboard", layout="wide")
-
     @st.cache_data
     def load_data():
         df = pd.read_csv('sales.csv', parse_dates=['OrderDate'])
@@ -11,7 +9,6 @@ import streamlit as st
         df['Month'] = df['OrderDate'].dt.to_period('M').astype(str)
         df['Year'] = df['OrderDate'].dt.year
         return df
-
     df = load_data()
     st.sidebar.header("Filters")
     regions = st.sidebar.multiselect("Region", df['Region'].unique(), default=df['Region'].unique())

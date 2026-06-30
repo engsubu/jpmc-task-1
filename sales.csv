@@ -1,0 +1,6 @@
+OrderDate,Product,Category,Region,Quantity,UnitPrice
+    2023-01-15,Laptop,Electronics,West,2,1100
+    2023-02-20,Mouse,Accessories,East,3,25
+    2023-03-10,Keyboard,Accessories,North,1,80
+    2023-04-05,Monitor,Electronics,South,2,300
+    2023-05-12,Headset,Accessories,West,4,60
